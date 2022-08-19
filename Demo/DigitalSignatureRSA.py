@@ -12,11 +12,11 @@ priv_Key=keyPair.exportKey("PEM")#Export this RSA key, specifies format to wrap 
 pub_key=keyPair.publickey().exportKey("PEM") # fn at the object level: The key will be the public key matching the given object.
 
 
-f = open('d:/cryptopython/demo/AlicePubKey.pem', 'wb')
+f = open('AlicePubKey.pem', 'wb')
 f.write(pub_key);
 f.close()
 print('Generated Public key for Alice::::::::::::');
-f = open('d:/cryptopython/demo/AlicePrivKey.pem', 'wb')
+f = open('AlicePrivKey.pem', 'wb')
 f.write(priv_Key)
 f.close()
 print('Generated Private key for Alice::::::::::::');

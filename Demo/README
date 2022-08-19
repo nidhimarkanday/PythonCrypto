@@ -1,0 +1,4 @@
+python DigitalSignatureRSA.py
+python DigitalSignatureCryptoPKS.py -s AlicePrivKey.pem data.txt AliceSignature.pem
+python DigitalSignatureCryptoPKS.py -v AlicePubKey.pem data.txt AliceSignature.pem
+python DigitalSignatureCryptoPKS.py -v AlicePubKey.pem data.txt digsig.pem

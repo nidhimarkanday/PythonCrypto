@@ -54,9 +54,9 @@ elif (op == "-v"):
     print(str)
     print(newline)
     if(verify_signature(key, data, sig_f)):
-        print('RESULT: Tom can trust data as verification is successful')
+        print('    RESULT: Tom can trust data as verification is successful')
     else:
-        print('RESULT: Tom will reject date as verification failed')
+        print('    RESULT: Tom will reject data as verification failed')
 else:
     #Error
     usage()
